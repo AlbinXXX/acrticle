@@ -12,14 +12,15 @@ import EditArticlePage from './pages/EditArticlePage';
 
 function App() {
   return (
+    //User provider warps the entire application just like discussed in class
     <UserProvider>
       <Router>
         <Routes>
-          {/* Public routes */}
+          {/* Public routes for accessing articles */}
           <Route path="/" element={<HomePage />} />
           <Route path="/:slug" element={<ArticlePage />} />
           
-          {/* Auth routes */}
+          {/* Auth routes for logging in */}
           <Route path="/auth/login" element={<LoginPage />} />
           
           {/* Protected admin routes */}

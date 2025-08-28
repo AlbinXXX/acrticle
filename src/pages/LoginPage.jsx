@@ -31,7 +31,7 @@ const LoginPage = () => {
       setLoading(false);
     }
   };
-
+  //JS a simple login form
   return (
     <div className="bg-gray-100 flex items-center justify-center h-screen">
       <form onSubmit={handleSubmit} className="bg-white p-8 rounded-2xl shadow-md w-96">

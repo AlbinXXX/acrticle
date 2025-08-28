@@ -19,6 +19,7 @@ const ArticleCard = ({ article }) => (
   </Link>
 );
 
+//primary Home page
 const HomePage = () => {
   const { articles, loading, error } = useArticles();
 
